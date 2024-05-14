@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript Events</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<form>
+		<input type="text" id="id1" placeholder="Enter the first number">
+		<input type="text" id="id2" placeholder="Enter the second number">
+		<input type="submit" value="Convert" onmouseout="convert()">
+	</form>
+	<script>
+		function convert() {
+			var var1 = document.getElementById('id1').value;
+			var var2 = document.getElementById('id2').value;
+			var concatenation = var1 + var2;
+				window.alert(concatenation)
+		}
+	</script>
+</body>
+</html>
